@@ -1,0 +1,171 @@
+.lc-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+
+.lc-widget.minimized .lc-card {
+    display: none;
+}
+
+.lc-toggle-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #3b82f6;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: transform 0.2s;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.lc-toggle-btn:hover {
+    transform: scale(1.05);
+}
+
+.lc-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    overflow: hidden;
+    margin-bottom: 70px;
+    /* Space for button */
+    border: 1px solid #e5e7eb;
+}
+
+.lc-header {
+    padding: 16px;
+    background: #f9fafb;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+}
+
+.lc-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #e0e7ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #4f46e5;
+    margin-right: 12px;
+    object-fit: cover;
+}
+
+.lc-info h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #111827;
+}
+
+.lc-info p {
+    margin: 2px 0 0;
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.lc-status-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #9ca3af;
+    margin-left: auto;
+}
+
+.lc-status-indicator.online {
+    background-color: #10b981;
+    box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+}
+
+.lc-body {
+    padding: 16px;
+}
+
+.lc-bio {
+    font-size: 13px;
+    color: #4b5563;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.lc-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.lc-btn {
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-align: center;
+}
+
+.lc-btn-primary {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.lc-btn-primary:hover {
+    background-color: #2563eb;
+}
+
+.lc-btn-secondary {
+    background-color: white;
+    border-color: #d1d5db;
+    color: #374151;
+}
+
+.lc-btn-secondary:hover {
+    background-color: #f3f4f6;
+}
+
+/* Forms */
+.lc-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.lc-input,
+.lc-textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+.lc-back-btn {
+    background: none;
+    border: none;
+    color: #6b7280;
+    cursor: pointer;
+    font-size: 12px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
